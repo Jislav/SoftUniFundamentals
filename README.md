@@ -1,0 +1,2 @@
+# SoftUniFundamentals
+SoftUni Fundamentals exercises.
