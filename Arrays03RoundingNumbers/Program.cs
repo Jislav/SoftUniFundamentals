@@ -1,4 +1,4 @@
-﻿namespace _03RoundingNumbers;
+﻿namespace Arrays03RoundingNumbers;
 using System;
 using System.Linq;
 

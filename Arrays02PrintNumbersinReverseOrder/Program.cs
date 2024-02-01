@@ -1,4 +1,4 @@
-﻿namespace _02PrintNumbersinReverseOrder
+﻿namespace Arrays02PrintNumbersinReverseOrder
 {
     internal class Program
     {
