@@ -12,13 +12,13 @@ namespace Methods08FactorialDivision
             BigInteger aFactorial = AFactorial(Math.Abs(a));
             BigInteger bFactorial = BFactorial(Math.Abs(b));
 
-            BigInteger result = FactorialDivision(aFactorial, bFactorial);
+            double result = FactorialDivision(aFactorial, bFactorial);
             Console.WriteLine($"{result:f2}");
         }
 
-         static BigInteger FactorialDivision(BigInteger a, BigInteger b)
+         static double FactorialDivision(BigInteger a, BigInteger b)
          {
-             BigInteger result = a / b;
+             double result = (double)a / (double)b;
 
              return result;
          }
