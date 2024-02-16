@@ -38,7 +38,7 @@
                 }
             }
 
-            Console.WriteLine(string.Join("\n", peopleGoing));
+            Console.WriteLine(string.Join($"{Environment.NewLine}", peopleGoing));
         }
         static bool CheckIfPersonIsOnTheList(string name, List<string> peopleGoing)
         {
