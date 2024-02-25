@@ -38,21 +38,6 @@
 
             Console.WriteLine($"{article.Title} - {article.Content}: {article.Author}");
         }
-
-        //public void Rename(Article article, string newName)
-        //{
-        //    article.Author = newName;
-        //}
-
-        //public void ChangeAuthor(Article article, string author)
-        //{
-        //    article.Author = author;
-        //}
-
-        //public void Edit(Article article, string edit)
-        //{
-        //    article.Title = edit;
-        //}
     }
     class Article
     {
