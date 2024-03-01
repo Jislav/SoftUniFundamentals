@@ -24,22 +24,22 @@ namespace ObjectsAndClasses05Teamwork_Projects
 
                 foreach (Teams currentTeam in teams)
                 {
-                    if (teamName == currentTeam.TeamName)
-                    {
-                        Console.WriteLine($"Team {teamName} was already created!");
-                        validInput = false;
-                    }
-
                     if (teamCreator == currentTeam.TeamOwner)
                     {
                         Console.WriteLine($"{teamCreator} cannot create another team!");
+                        validInput = false;
+                    }
+                    else if (teamName == currentTeam.TeamName)
+                    {
+                        Console.WriteLine($"Team {teamName} was already created!");
                         validInput = false;
                     }
                 }
 
                 if (validInput)
                 {
-                    Teams team = new Teams(teamCreator, teamName);
+                    List<string> members = new List<string>();
+                    Teams team = new Teams(teamCreator, teamName, members);
                     teams.Add(team);
                     Console.WriteLine($"Team {teamName} has been created by {teamCreator}!");
                 }
@@ -64,88 +64,73 @@ namespace ObjectsAndClasses05Teamwork_Projects
                         }
                     }
 
-                    bool personIsNotInATeam = true;
 
                     if (teamExists)
                     {
+                        bool personIsNotInATeam = true;
                         foreach (Teams team in teams)
                         {
-                            if (team.Members == null)
+                            if (team.Members.Contains(person) || team.TeamOwner.Contains(person))
                             {
-                                continue;
+                                personIsNotInATeam = false;
+                                break;
                             }
-                            else
+                        }
+                        if (personIsNotInATeam)
+                        {
+                            foreach (Teams team in teams)
                             {
-                                bool personIsNotOnATeam = true;
-                                foreach (string member in team.Members)
+                                if (team.TeamName.Contains(teamToJoin))
                                 {
-                                    if (member.ToString() == person)
-                                    {
-                                        Console.WriteLine($"Member {person} cannot join team {teamToJoin}!");
-                                        personIsNotOnATeam = false;
-                                        break;
-                                    }
-                                }
-                                if(personIsNotInATeam)
-                                {
-                                    foreach(Teams t in teams)
-                                    {
-                                        if(t.TeamName == teamToJoin)
-                                        {
-                                            List<string> members = t.Members;
-                                            members.Add(person);
-                                            t.Members = members;
-                                        }
-                                    }
-
+                                    team.Members.Add(person);
                                 }
                             }
                         }
-                        //foreach (Teams team in teams)
-                        //{
-                        //    List<string> currentTeamMembers = new();
-                        //    if (currentTeamMembers.Contains(person))
-                        //    {
-                        //        Console.WriteLine($"Member {person} cannot join team {teamToJoin}!");
-                        //        personIsNotInATeam = false;
-                        //        break;
-                        //    }
-                        //}
+                        else
+                        {
+                            Console.WriteLine($"Member {person} cannot join team {teamToJoin}!");
+                        }
                     }
                     else
                     {
                         Console.WriteLine($"Team {teamToJoin} does not exist!");
-                        continue;
                     }
                 }
             }
-            foreach (Teams team in teams)
+           
+            List<string> teamsToDisband = new List<string>();
+            foreach (Teams team in teams.OrderByDescending(x => x.Members.Count).ThenBy(x => x.TeamName))
             {
-                Console.WriteLine($"{team.TeamName}");
-                Console.WriteLine($"- {team.TeamOwner}");
-                
+                if (team.Members.Count > 0)
+                {
+                    Console.WriteLine($"{team.TeamName}");
+                    Console.WriteLine($"- {team.TeamOwner}");
+                    foreach (string member in team.Members.OrderBy(x => x))
+                    {
+                        Console.WriteLine($"-- {member} ");
+                    }
+                }
+                else
+                {
+                    teamsToDisband.Add(team.TeamName);
+                }
             }
+            
+            Console.WriteLine("Teams to disband:");
+            Console.WriteLine(string.Join(Environment.NewLine, teamsToDisband.OrderBy(x => x)));
+
         }
     }
     class Teams
     {
-        public Teams(string teamCreator, string teamName)
+        public Teams(string teamCreator, string teamName, List<string> members)
         {
             TeamOwner = teamCreator;
             TeamName = teamName;
+            Members = members;
         }
         public string TeamOwner { get; set; }
         public string TeamName { get; set; }
         public List<string> Members { get; set; }
     }
-    //class Members
-    //{
-    //    public Members()
-    //    {
-    //        TeamMembers = new List<string>();
-    //    }
-
-    //    public List<string> TeamMembers { get; set; }
-    //}
-
 }
