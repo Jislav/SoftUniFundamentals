@@ -157,19 +157,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectsAndClasses06VehicleC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectsAndClasses07OrderbyAge", "ObjectsAndClasses07OrderbyAge\ObjectsAndClasses07OrderbyAge.csproj", "{68594E67-C670-46AD-AFDE-0E9D6E7914A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays01CountRealNumbers", "AssociativeArrays01CountRealNumbers\AssociativeArrays01CountRealNumbers.csproj", "{CF2E9D9E-DDA0-4F62-B2B2-8102E7C35C95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays01CountRealNumbers", "AssociativeArrays01CountRealNumbers\AssociativeArrays01CountRealNumbers.csproj", "{CF2E9D9E-DDA0-4F62-B2B2-8102E7C35C95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays02OddOccurrences", "AssociativeArrays02OddOccurrences\AssociativeArrays02OddOccurrences.csproj", "{4DA63084-58C1-4BF2-844D-A7CB9314C024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays02OddOccurrences", "AssociativeArrays02OddOccurrences\AssociativeArrays02OddOccurrences.csproj", "{4DA63084-58C1-4BF2-844D-A7CB9314C024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays03WordSynonyms", "AssociativeArrays03WordSynonyms\AssociativeArrays03WordSynonyms.csproj", "{08BD36B6-9A49-4D44-8ACC-08132631D16A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays03WordSynonyms", "AssociativeArrays03WordSynonyms\AssociativeArrays03WordSynonyms.csproj", "{08BD36B6-9A49-4D44-8ACC-08132631D16A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays04WordFilter", "AssociativeArrays04WordFilter\AssociativeArrays04WordFilter.csproj", "{C3225794-25C6-410E-8310-D72A836E17EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays04WordFilter", "AssociativeArrays04WordFilter\AssociativeArrays04WordFilter.csproj", "{C3225794-25C6-410E-8310-D72A836E17EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays01CountCharsInAString", "AssociativeArrays01CountCharsInAString\AssociativeArrays01CountCharsInAString.csproj", "{EDB5BE70-1B31-4039-AC0A-4328E2C7DC9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays01CountCharsInAString", "AssociativeArrays01CountCharsInAString\AssociativeArrays01CountCharsInAString.csproj", "{EDB5BE70-1B31-4039-AC0A-4328E2C7DC9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays02AMinerTask", "AssociativeArrays02AMinerTask\AssociativeArrays02AMinerTask.csproj", "{2965CAEE-004E-4FE1-8561-FAEAFE10EE4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays02AMinerTask", "AssociativeArrays02AMinerTask\AssociativeArrays02AMinerTask.csproj", "{2965CAEE-004E-4FE1-8561-FAEAFE10EE4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays03Orders", "AssociativeArrays03Orders\AssociativeArrays03Orders.csproj", "{F1E39A52-DD0D-4D46-9161-DB52BDE605D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociativeArrays03Orders", "AssociativeArrays03Orders\AssociativeArrays03Orders.csproj", "{F1E39A52-DD0D-4D46-9161-DB52BDE605D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays04SoftUniParking", "AssociativeArrays04SoftUniParking\AssociativeArrays04SoftUniParking.csproj", "{BE0821D2-2488-4576-8881-56AA2C9051CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays05Courses", "AssociativeArrays05Courses\AssociativeArrays05Courses.csproj", "{D88291AE-7F34-4CDC-A2B8-B6566A3ACF1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays06StudentAcademy", "AssociativeArrays06StudentAcademy\AssociativeArrays06StudentAcademy.csproj", "{5B8DE24D-4C02-4B9E-ADC6-C579657DF637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociativeArrays07CompanyUsers", "AssociativeArrays07CompanyUsers\AssociativeArrays07CompanyUsers.csproj", "{23E495B0-9464-4DF6-8DC2-19E1BDB37E1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -513,6 +521,22 @@ Global
 		{F1E39A52-DD0D-4D46-9161-DB52BDE605D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E39A52-DD0D-4D46-9161-DB52BDE605D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1E39A52-DD0D-4D46-9161-DB52BDE605D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0821D2-2488-4576-8881-56AA2C9051CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0821D2-2488-4576-8881-56AA2C9051CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0821D2-2488-4576-8881-56AA2C9051CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0821D2-2488-4576-8881-56AA2C9051CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88291AE-7F34-4CDC-A2B8-B6566A3ACF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88291AE-7F34-4CDC-A2B8-B6566A3ACF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88291AE-7F34-4CDC-A2B8-B6566A3ACF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88291AE-7F34-4CDC-A2B8-B6566A3ACF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8DE24D-4C02-4B9E-ADC6-C579657DF637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8DE24D-4C02-4B9E-ADC6-C579657DF637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8DE24D-4C02-4B9E-ADC6-C579657DF637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8DE24D-4C02-4B9E-ADC6-C579657DF637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E495B0-9464-4DF6-8DC2-19E1BDB37E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E495B0-9464-4DF6-8DC2-19E1BDB37E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E495B0-9464-4DF6-8DC2-19E1BDB37E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E495B0-9464-4DF6-8DC2-19E1BDB37E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
